@@ -1,9 +1,12 @@
+$:.push File.expand_path("../lib", __FILE__)
+require "resque-fanout/version"
+
 Gem::Specification.new do |s|
-  s.name              = "resque-pubsub"
-  s.version           = "0.5"
+  s.name              = "resque-fanout"
+  s.version           = ResqueFanout::VERSION
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Resque Plugin for fanout routing to multiple queues"
-  s.homepage          = "http://github.com/derfred/resque-pubsub"
+  s.homepage          = "http://github.com/konvenit/resque-pubsub"
   s.email             = "ich@derfred.com"
   s.authors           = [ "Frederik Fix" ]
   s.has_rdoc          = false
